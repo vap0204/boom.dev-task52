@@ -16,20 +16,20 @@
     </div>
   </body>
   <script>
-     window.addEventListener("DOMContentLoaded", ()=>{
-      const button=document.querySelector(".button");
-      button.addEventListener("click",()=>{
-        alert("");
-      });
-      let article=document.createElement('article');
-      article.classList.add('message');
-      article.textContent='Plain message.';
-      const bodyEl=document.getElementById('body');
-      bodyEl.addEventListener("click",()=>{
-        for(let i=0;i<5;i++){
-          bodyEl.prepend(article.cloneNode(l));
-        }
-      });
-     });
+    window.addEventListener("DOMContentLoaded", () =>{
+const button = document.querySelector(".button");
+button.addEventListener("click",() => {
+  alert("💣");
+});
+let article = document.createElement('article');
+article.classList.add('message');
+article.textContent ='Plain message.';
+const bodyEl = document.getElementById('body');
+bodyel.addEventListener("click", () => {
+  for (let i = 0; i < 5 ; i++){
+    bodyEl.prepend(article.cloneNode(1))
+  }
+} );
+});
   </script>
 </html>
