@@ -24,7 +24,7 @@
     article.classList.add('message');
     article.textContent = 'Plain message.';
     const bodyEl = document.getElementById('body');
-    bodyel.addEventListener("click", () => {
+    bodyEl.addEventListener("click", () => {
       for (let i = 0; i < 5; i++) {
         bodyEl.prepend(article.cloneNode(1))
       }
