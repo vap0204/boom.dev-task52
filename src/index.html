@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
-    </div>
-  </body>
-  <script>
-    window.addEventListener("DOMContentLoaded", () =>{
-const button = document.querySelector(".button");
-button.addEventListener("click",() => {
-  alert("💣");
-});
-let article = document.createElement('article');
-article.classList.add('message');
-article.textContent ='Plain message.';
-const bodyEl = document.getElementById('body');
-bodyel.addEventListener("click", () => {
-  for (let i = 0; i < 5 ; i++){
-    bodyEl.prepend(article.cloneNode(1))
-  }
-} );
-});
-  </script>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML, CSS and SASS Boilerplate</title>
+  <meta name="description" content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="emoji mb-6">💣🤯💥</div>
+    <button class="button">Boom?</button>
+  </div>
+</body>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector(".button");
+    button.addEventListener("click", () => {
+      alert("💣");
+    });
+    let article = document.createElement('article');
+    article.classList.add('.message');
+    article.textContent = 'Plain message.';
+    const bodyEl = document.getElementById('body');
+    bodyel.addEventListener("click", () => {
+      for (let i = 0; i < 5; i++) {
+        bodyEl.prepend(article.cloneNode(1))
+      }
+    });
+  });
+</script>
+
 </html>
