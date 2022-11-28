@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<body>
+<body id="body">
   <div class="main">
     <div class="emoji mb-6">💣🤯💥</div>
     <button class="button">Boom?</button>
@@ -21,7 +21,7 @@
       alert("💣");
     });
     let article = document.createElement('article');
-    article.classList.add('.message');
+    article.classList.add('message');
     article.textContent = 'Plain message.';
     const bodyEl = document.getElementById('body');
     bodyel.addEventListener("click", () => {
